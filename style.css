@@ -38,6 +38,7 @@ body {
     background: #51D5AB;
     background: linear-gradient(225deg, #51D5AB, #E0AED1);
     transform: translateZ(50px);
+    transform-style: preserve-3d;
     border-radius: 5%;
 }
 
@@ -48,5 +49,25 @@ body {
     transform: translateZ(1px);
     border-radius: 5%;
     filter: blur(15px);
+    opacity: 0.5;
+}
+
+.name {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    height: 170px;
+    width: 270px;  
+    transform: translateZ(50px);
+    transform-style: preserve-3d;
+    border-radius: 5%;
+}
+
+.nameShadow {
+    border-radius: 5%;
+    filter: blur(6px);
     opacity: 0.5;
 }
