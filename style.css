@@ -1,0 +1,52 @@
+body {
+    background-color: #212121;
+}
+
+.container {
+    background: #D4D3E8;
+    background: radial-gradient(at center, #D4D3E8, #BBE6FC);
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background: #8E89B0;
+    background: linear-gradient(225deg, #8E89B0, #5C98A1);
+    border-radius: 5%;
+    transform: perspective(5000px);
+    transform-style: preserve-3d;
+    transition: transform 1s ease-out;
+}
+
+.incard {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    height: 170px;
+    width: 270px;
+    background: #51D5AB;
+    background: linear-gradient(225deg, #51D5AB, #E0AED1);
+    transform: translateZ(50px);
+    border-radius: 5%;
+}
+
+.shadow {
+    height: 170px;
+    width: 270px;
+    background-color: black;
+    transform: translateZ(1px);
+    border-radius: 5%;
+    filter: blur(15px);
+    opacity: 0.5;
+}
